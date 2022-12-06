@@ -131,9 +131,6 @@ typedef struct _PLCrashReportDecoder _PLCrashReportDecoder;
     /** Exception information (may be nil) */
     __strong PLCrashReportExceptionInfo *_exceptionInfo;
 
-    /** User defined information (may be nil) */
-    __strong NSData *_customData;
-
     /** Report UUID */
     CFUUIDRef _uuid;
 }
