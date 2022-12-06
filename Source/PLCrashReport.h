@@ -210,12 +210,6 @@ typedef struct _PLCrashReportDecoder _PLCrashReportDecoder;
 @property(nonatomic, readonly, strong) PLCrashReportExceptionInfo *exceptionInfo;
 
 /**
- * Custom user data. Only available if user explicitly assigned it before crash happened,
- * otherwise nil.
- */
-@property(nonatomic, readonly, strong) NSData *customData;
-
-/**
  * A client-generated 16-byte UUID. May be used to filter duplicate reports submitted or generated
  * by a single client. Only available in later (v1.2+) crash report format versions. If not available,
  * will be NULL.
